@@ -7,11 +7,16 @@ import {
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './screens/HomeScreen';
+import SalonScreen from './screens/SalonScreen';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: '/salon',
+    element: <SalonScreen />,
   },
 ]);
 

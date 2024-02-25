@@ -1,13 +1,18 @@
 import React from 'react';
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 function PopUpHome({ isJoin, isVisible }) {
+
+  const navigate = useNavigate();
+
+
     if(!isVisible) {
         return null;
         }
 
     const validGame = () => {
-        
+      navigate('/salon');
     }
     
     return (
