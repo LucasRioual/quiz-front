@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/do-it-quiz/static/css/main.6403dd14.css",
-    "main.js": "/do-it-quiz/static/js/main.990f830d.js",
-    "static/js/453.ee3fb088.chunk.js": "/do-it-quiz/static/js/453.ee3fb088.chunk.js",
-    "static/media/Lexend.ttf": "/do-it-quiz/static/media/Lexend.8c2b86fea1234bcd4234.ttf",
-    "static/media/OneNine.ttf": "/do-it-quiz/static/media/OneNine.3c08ec526127b78d31b6.ttf",
-    "index.html": "/do-it-quiz/index.html",
-    "main.6403dd14.css.map": "/do-it-quiz/static/css/main.6403dd14.css.map",
-    "main.990f830d.js.map": "/do-it-quiz/static/js/main.990f830d.js.map",
-    "453.ee3fb088.chunk.js.map": "/do-it-quiz/static/js/453.ee3fb088.chunk.js.map"
+    "main.css": "/quiz-front/static/css/main.16ec6ab2.css",
+    "main.js": "/quiz-front/static/js/main.e02f49c4.js",
+    "static/js/453.ee3fb088.chunk.js": "/quiz-front/static/js/453.ee3fb088.chunk.js",
+    "static/media/Lexend.ttf": "/quiz-front/static/media/Lexend.8c2b86fea1234bcd4234.ttf",
+    "static/media/OneNine.ttf": "/quiz-front/static/media/OneNine.3c08ec526127b78d31b6.ttf",
+    "index.html": "/quiz-front/index.html",
+    "main.16ec6ab2.css.map": "/quiz-front/static/css/main.16ec6ab2.css.map",
+    "main.e02f49c4.js.map": "/quiz-front/static/js/main.e02f49c4.js.map",
+    "453.ee3fb088.chunk.js.map": "/quiz-front/static/js/453.ee3fb088.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6403dd14.css",
-    "static/js/main.990f830d.js"
+    "static/css/main.16ec6ab2.css",
+    "static/js/main.e02f49c4.js"
   ]
 }
