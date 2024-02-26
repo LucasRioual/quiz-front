@@ -8,6 +8,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './screens/HomeScreen';
 import SalonScreen from './screens/SalonScreen';
+import GameScreen from './screens/GameScreen';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: '/salon',
     element: <SalonScreen />,
+  },
+  {
+    path: '/game',
+    element: <GameScreen />,
   },
 ]);
 
