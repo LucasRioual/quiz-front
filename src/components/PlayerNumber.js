@@ -2,7 +2,7 @@ import React from 'react';
 
 function PlayerNumber(props) {
   return (
-    <div class= "bg-primary py-2 px-4 rounded-xl font-Lexend mt-4 absolute right-4 bottom-4 flex items-center ">
+    <div className= "bg-primary py-2 px-4 rounded-xl font-Lexend mt-4 absolute right-4 bottom-4 flex items-center ">
 
         <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.6875 18C13.4834 18 15.75 15.7334 15.75 12.9375C15.75 10.1416 13.4834 7.875 10.6875 7.875C7.89156 7.875 5.625 10.1416 5.625 12.9375C5.625 15.7334 7.89156 18 10.6875 18Z" fill="white"/>
@@ -12,7 +12,7 @@ function PlayerNumber(props) {
         </svg>
 
 
-        <p class=" text-white text-2xl font-bold text-center ml-2 ">{props.number}</p>
+        <p className=" text-white text-2xl font-bold text-center ml-2 ">{props.number}</p>
         
     </div>
   );

@@ -11,10 +11,10 @@ function GameScreen() {
 
 
   return (
-    <div class = "h-screen flex items-center flex-col font-Lexend pt-8">
+    <div className = "h-screen flex items-center flex-col font-Lexend pt-8">
        <LogoHorizontal/>
-       <div class="bg-white rounded-md py-2 mt-10 inline-block px-6">
-         <p class=" text-lg text-center font-bold">Question 1</p>
+       <div className="bg-white rounded-md py-2 mt-10 inline-block px-6">
+         <p className=" text-lg text-center font-bold">Question 1</p>
         </div>
         <Quiz/>
         <Timer time={10}/>

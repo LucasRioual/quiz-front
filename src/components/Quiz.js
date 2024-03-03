@@ -14,7 +14,7 @@ function Quiz() {
   return (
     <div className='mb-8  w-1/3'>
         <div className="bg-gray-200 rounded-md py-2 mt-8 px-10">
-        <p className="text-xl text-center my-6">Quelle est le prénom de Samy Diafat, le célèbre bouffeur de carte graphique ?</p>
+        <p className="text-xl text-center my-6">Quelle est le véritable prénom de Samy Diafat ? </p>
         <Answer index={0} selected={selectedAnswer === 0} onClick={() => handleAnswerClick(0)} disable={disableAnswers} />
         <Answer index={1} selected={selectedAnswer === 1} onClick={() => handleAnswerClick(1)} disable={disableAnswers} />
         <Answer index={2} selected={selectedAnswer === 2} onClick={() => handleAnswerClick(2)} disable={disableAnswers} />

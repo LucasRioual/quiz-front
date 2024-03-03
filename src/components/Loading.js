@@ -17,7 +17,7 @@ function Loading({active}) {
         return null;
       }
   return (
-    <div class = " absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg py-10 px-10">
+    <div className = " absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-lg py-10 px-10">
         <div id="loadingSVG">
           <svg width="221" height="221" viewBox="0 0 221 221" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M110.5 18.417C72.4418 18.417 53.4082 18.417 47.8648 30.3878C47.3884 31.4191 46.9882 32.484 46.6677 33.5739C42.8923 46.3459 56.3549 61.1529 83.2616 90.7577L101.292 110.5H119.708L137.738 90.7669C164.645 61.1529 178.098 46.3459 174.332 33.5831C174.013 32.4868 173.613 31.4157 173.135 30.3786C167.592 18.417 148.558 18.417 110.5 18.417Z" fill="#E5386F"/>
