@@ -1,0 +1,36 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  REGISTRY: docker.io
+  IMAGE_NAME: lrioual/quiz-front
+  TAG: ${{ github.sha }}
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+
+    services:
+      docker:
+        image: docker:20.10.17
+
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        run: |
+          echo "${{ env.DOCKER_PASSWORD }}" | docker login "${{ env.REGISTRY }}" --username "${{ env.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build and push Docker image
+        run: |
+          docker build . --file Dockerfile --tag "${{ env.IMAGE_NAME }}:${{ env.TAG }}"
+          docker push "${{ env.IMAGE_NAME }}:${{ env.TAG }}"
