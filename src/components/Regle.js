@@ -6,7 +6,7 @@ function Regle({cancel, isVisible}) {
 
    
 
-    const TableauText = ["Bienvenue dans le Do_It Quiz ! Le battle royale de l'option Do_It",
+    const TableauText = ["Bienvenue dans le Do_It Quiz ! Le battle royale de l'option Do_It ! ",
      "Tous les joueurs démarrent avec 2 vies et doivent répondre à des questions sur Do_It",
      "Les joueurs perdent une vie à chaque mauvaise réponse",
      "Le dernier joueur en vie remporte la partie !"]
