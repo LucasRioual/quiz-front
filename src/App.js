@@ -9,6 +9,8 @@ import { SocketContext, socket } from './services/Socket/SocketManage';
 import { useSelector, useDispatch } from 'react-redux';
 import { setNewPlayer } from './Store/Reducer/gameSlice';
 
+//https://medium.com/@thearaseng/building-a-full-stack-product-app-with-react-spring-boot-and-docker-compose-64a47f4a1080
+
 
 const router = createBrowserRouter([
   {

@@ -3,14 +3,14 @@ import Button from './Button';
 import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import { useSocket } from '../services/Socket/useSocket';
+import RoundButton from './RoundButton';
 
-function PopUpHome({ isJoin, isVisible }) {
+function PopUpHome({ isJoin, isVisible, cancel }) {
 
 
   const navigate = useNavigate();
   const userInput = useRef(null);
   const gameCodeInput = useRef(null);
-  const { connectRoom} = useSocket();
 
   useEffect(() => {
     if (isVisible) {
@@ -64,6 +64,9 @@ function PopUpHome({ isJoin, isVisible }) {
     
     return (
       <div id='containerPopUp' className="bg-white rounded-md py-8 font-Lexend items-center flex flex-col">
+        <div className='absolute -top-5 -right-5'>
+                <RoundButton symbole='x' click={cancel}  />
+            </div>
         <h3 className="font-bold text-3xl text-center mb-4">
           {isJoin ? 'Rejoindre' : 'Créer'}
         </h3>
@@ -72,7 +75,7 @@ function PopUpHome({ isJoin, isVisible }) {
           type="text"
           id="username"
           name="username"
-          className="w-2/3 text-xl p-2 m-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+          className="w-2/3 md:text-xl text-md p-2 m-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
           placeholder="Ton super pseudo !"
         />
         {isJoin && (
@@ -81,7 +84,7 @@ function PopUpHome({ isJoin, isVisible }) {
             type="text"
             id="gameCode"
             name="gameCode"
-            className="w-2/3 text-xl p-2 m-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+            className="w-2/3 md:text-xl text-md p-2 m-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
             placeholder="Le code de la partie !"
           />
         )}

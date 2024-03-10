@@ -53,22 +53,31 @@ function Regle({cancel, isVisible}) {
   return (
     <div className='h-full w-full absolute flex items-center justify-center'>
         <div className= "h-full w-full bg-gray-900 opacity-70 absolute "></div>
-        <div className='m-6'>
+        <div className='m-6' disabled={index === 0}>
             <RoundButton symbole='<' click={leftClick}/>
         </div>
-        <div id="container" className= "relative h-1/2 w-2/5 bg-white rounded-xl z-10 flex flex-col justify-center items-center ">
-            <p className='font-Lexend text-2xl w-1/2 text-center'>{text}</p>
+        <div id="container" className= "relative py-20 w-full md:w-2/5 md:h-1/2 px-4 bg-white rounded-xl z-10 flex flex-col justify-center items-center ">
+            <p className='font-Lexend md:text-2xl md:w-2/3 text-md  text-center'>{text}</p>
             <div className='absolute -top-7 right-10'>
                 <RoundButton symbole='x' click={cancel}  />
             </div>
+            <div className="absolute -bottom-7 flex justify-center w-full">
+          {TableauText.map((_, ind) => (
+            <div
+              key={ind}
+              className={`w-3 h-3 rounded-full mx-2  ${
+                index === ind ? "bg-primary" : "bg-white"
+              }`}
+            />
+          ))}
+        </div>
             
         </div>
-        <div className='m-6'>
+        <div className='m-6' disabled={index === TableauText.length - 1}>
             <RoundButton symbole='>' click={rightClick} />
         </div>
         
-
-
+        
     </div>
     
 

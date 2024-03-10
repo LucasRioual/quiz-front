@@ -1,7 +1,6 @@
 {
   "name": "quiz-front",
   "version": "0.1.0",
-  "homepage": "https://lucasrioual.github.io/quiz-front",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
